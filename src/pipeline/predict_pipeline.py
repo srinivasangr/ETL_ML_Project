@@ -10,6 +10,7 @@ class PredictPipeline:
 
     def predict(self,features):
         try:
+            logging.info("Starting prediction")
             model_path=os.path.join("artifacts","model.pkl")
             preprocessor_path=os.path.join('artifacts','preprocessor.pkl')
             print("Before Loading")
@@ -18,6 +19,7 @@ class PredictPipeline:
             print("After Loading")
             data_scaled=preprocessor.transform(features)
             preds=model.predict(data_scaled)
+            logging.info(f"Prediction results: {preds}")
             return preds
         
         except Exception as e:
