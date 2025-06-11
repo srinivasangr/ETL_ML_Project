@@ -78,7 +78,7 @@ python app.py
 |   Engineering     |       | and Selection     |       |                   |
 +-------------------+       +-------------------+       +-------------------+
 ```
-
+![Flow Diagram](fig1.png)
 ---
 
 ## Features
